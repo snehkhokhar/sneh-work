@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: harsh;
+        src: url(assets/font/square-sans-serif-7/square_sans_serif_7.ttf);
+      }
+      body{
+            background-color: rgb(247, 251, 255);
+      }
+      .container {
+        border-radius: 50px;
+        width: 650px;
+        background-color: snow;
+        height: 250px;
+        box-shadow: 7px 7px 15px rgba(169, 85, 255, 0.5);
+        margin: 100px auto;
+        padding:30px;
+        position: relative;
+        display: flow-root;
+        padding-top: 10px;
+        padding-left: 50px;
+      }
+      #min {
+        font-size: 120px;
+        font-family: harsh;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+      }
+      #hour {
+        font-size: 120px;
+        font-family: harsh;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      #sec {
+        font-size: large;
+        font-family: harsh;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        margin-top: 76px;
+        margin-left: 15px;
+      }
+      #date {
+        font-size: xx-large;
+        font-family: Orbitron;
+        word-spacing: 5px;
+        margin-top: 40px;
+        max-width: 350px;
+        max-height: 45px;
+        overflow: hidden;
+      }
+      .dot1 {
+        font-size: 80px;
+        margin:7px 30px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+      }
+      .time{
+        display: flex;
+      }
+      .bubble1{
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(45deg ,#a955ff,#ea51ff);
+        border-radius: 50px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+      .bubble2{
+        height: 70px;
+        width: 70px;
+        background: linear-gradient(45deg ,#56ccf2,#2f80ed);
+        border-radius: 50px;
+        position: absolute;
+        right: 120px;
+        bottom: 25px;
+      }
+      .bubble3{
+        height: 70px;
+        width: 70px;
+        background: linear-gradient(45deg ,#ff9966,#ff5e62);
+        border-radius: 50px;
+        position: absolute;
+        right: 25px;
+        bottom: 120px;
+      }
+      .bubble4{
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(45deg ,#80ff72,#7ee8fa);
+        border-radius: 50px;
+        position: absolute;
+        right: 200px;
+        bottom: 20px;
+      }
+      .bubble5{
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(45deg ,#ffa9c6,#f434e2);
+        border-radius: 50px;
+        position: absolute;
+        right: 20px;
+        bottom: 200px;
+      }
+      .bubble6{
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(45deg ,#ffa9c6,#f434e2);
+        border-radius: 50px;
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="time">
+        <div id="hour"></div>
+        <div class="dot1">:</div>
+        <div id="min"></div>
+      
+      <div id="sec"></div>
+    </div>
+      <div id="date"></div>
+      <div class="decoration">
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+        <div class="bubble4"></div>
+        <div class="bubble5"></div>
+        <div class="bubble6"></div>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
